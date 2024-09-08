@@ -1,0 +1,29 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #f8f8f1;
+    padding: 40px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links li a {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6b6b6b;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: #6b6b6b;
+  }
+  

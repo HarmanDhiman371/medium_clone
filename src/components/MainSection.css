@@ -1,0 +1,432 @@
+/* Basic Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f1;
+    width: 100%;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px;
+    padding-right: 190px;
+    background-color: #f8f8f1;
+    border-bottom: 1px solid #000000;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .nav-bar h1 {
+    font-size: 34px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    margin-left: 2%;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  ul li {
+    font-size: 18px;
+    font-family: "Georgia", serif;
+    font-weight: 500;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Georgia", serif;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  /* Main Section Styling */
+  .part-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0%;
+    height: 550px;
+    background-color: #f8f8f1;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .inner1 {
+    width: 60%;
+  }
+  
+  .inner2 {
+    width: 40%;
+    text-align: right;
+  }
+  
+  .img-m {
+    width: 460px;
+    aspect-ratio: auto 460 / 600;
+    height: 600px;
+    vertical-align: middle;
+    margin-top: 20px; /* Adjust to prevent image overlapping the navbar */
+  }
+  
+  .main-heading {
+    font-size: 100px;
+    font-weight: 400;
+    font-family: "gt-super", Georgia, serif;
+    line-height: 1.2;
+    /* width: 700px; */
+    letter-spacing: -0.05em;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+  
+  .heading-subtext {
+    font-size: 22px;
+    font-family: "Georgia", serif;
+    color: #242424;
+    line-height: 28px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  
+  .start-reading-btn {
+    background-color: rgb(2, 3, 2);
+    color: white;
+    padding: 10px 20px;
+    width: 196px;
+    border-radius: 30px;
+    line-height: 28px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 5%;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #f8f8f1;
+    padding: 40px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-links li a {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6b6b6b;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: #6b6b6b;
+  }
+  
+  .footer-rights {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 1200px) {
+    /* .img-m {
+          display: none;
+      } */
+    .img {
+      width: auto;
+      margin-left: 5%;
+      /* aspect-ratio: auto 460 / 600; */
+      height: auto;
+      margin-top: 20px;
+      justify-self: self-end;
+    }
+    .part-2{
+      min-height: 100vh;
+      width: 100%;
+    }
+    .main-heading {
+      margin-top: 5%;
+      font-size: 100px;
+      
+    }
+    .inner2{
+      /* margin-left: 25%; */
+      align-self: self-end;
+      justify-self: flex-end;
+    }
+    .heading-subtext {
+      font-size: 18px;
+    }
+    .nav-bar{
+      width: 100%;
+    }
+    .bt {
+      font-size: 14px;
+      padding: 8px 15px;
+      right: 15px; /* Adjust button position for small screens */
+    }
+  }
+  @media (max-width: 900px) {
+    .img-m {
+      display: none;
+    }
+    .main-heading {
+      font-size: 90px;
+    }
+  
+    .heading-subtext {
+      font-size: 18px;
+    }
+    .footer{
+        background-color: #000;
+    }
+    .ft-l{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 727px) {
+    .temp {
+      display: none;
+    }
+  
+    .part-2 {
+      /* margin-left: 14%; */
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .inner1,
+    .inner2 {
+      width: 100%;
+    }
+  
+    .main-heading {
+      
+      font-size: 60px;
+    }
+  
+    .heading-subtext {
+      font-size: 18px;
+    }
+  
+    .start-reading-btn {
+      padding: 6px 10px;
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .temp {
+      display: none;
+    }
+  
+    .nav-bar {
+      margin: 0;
+      padding: 0;
+      justify-content: space-around;
+    }
+  
+    /* .get-started-btn {
+          display: block;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+      } */
+    .start-reading-btn {
+      padding: 6px 10px;
+      font-size: 14px;
+      width: auto;
+    }
+  
+    .main-heading {
+      font-size: 40px;
+      /* margin-left: 5%; */
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  /* Ensuring Get Started button is always visible and positioned on the right */
+  .bt {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Georgia", serif;
+    position: absolute;
+    right: 40px;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  /* Adjusting gap between main headings and footer for smaller screens */
+  @media (max-width: 727px) {
+    .part-2 {
+      margin-top: 20%;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding: 20px 0;
+      height: 550px; /* Adjust height for better alignment */
+    }
+  
+    .main-heading {
+      font-size: 60px;
+      align-self: center;
+      margin-bottom: 10px; /* Reduced margin for better spacing */
+    }
+  
+    .heading-subtext {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    .start-reading-btn {
+      width: 150px;
+      margin: 20px auto; /* Center button with reduced gap */
+    }
+  
+    /* Adjusting the gap between content and footer */
+    .footer {
+      padding-top: 30px; /* Reduced top padding */
+    }
+  }
+  
+  /* Responsive for mobile screens, ensuring button stays on the right */
+  @media (max-width: 468px) {
+    .nav-bar {
+      margin: 0;
+      padding: 0;
+      justify-content: space-around;
+    }
+  
+    .temp
+    {
+      display: none !important;
+    }
+    .temp2{
+      display: none;
+    }
+  
+    .nav-bar h1 {
+      font-size: 22px;
+      margin-left: 0%;
+    }
+    .part2 {
+      height: 550px;
+    }
+    .bt {
+      font-size: 14px;
+      padding: 8px 15px;
+      right: 15px; /* Adjust button position for small screens */
+    }
+  
+    .main-heading {
+      font-size: 40px;
+    }
+  
+    .start-reading-btn {
+      width: 130px;
+      margin-left: 0;
+    }
+  
+    .part-2 {
+      padding-bottom: 0;
+    }
+  }
+  @media (max-width: 1024px) {
+    .part-2 {
+      
+      min-height: 100vh; /* Fills screen height on iPads */
+    }
+  
+    
+  
+    /*  */
+  }
+  
+  @media (max-width: 900px) {
+    .img-m {
+      display: none; /* Hides the image on smaller devices */
+    }
+    .main-heading {
+      margin-top: 12%;
+      font-size: 80px;
+    }
+  
+    .part-2 {
+      min-height: 100vh;
+    }
+  }
+  
+  @media (max-width: 727px) {
+    .part-2 {
+      margin-left: 15%;
+      min-height: 80vh; /* Adjust height for mobile devices */
+    }
+  
+    .main-heading {
+      
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .part-2 {
+      margin-top: 10%;
+      margin-left: 0% ;
+      min-height: 75vh;
+    }
+  
+    .main-heading {
+      font-size: 40px;
+    }
+  
+    .start-reading-btn {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  
